@@ -1,0 +1,14 @@
+basic_settings:
+  site_title: Haus zur Miete
+  site_tagline: Osteopathie in Gummersbach
+  site_subtitle: Heilpraktikerin mit den Schwerpunkten Osteopathie & Manuelle Therapie
+  favicon_image: /images/favicon.ico
+  description: Heilpraktikerin mit den Schwerpunkten Osteopathie, Manuelle Therapie und Physiotherapie; Behandlung von S&amp;auml;uglingen und Erwachsenen
+  featured_image: /images/hero/nina-schoppmann-osteopathie-1x1.jpg
+
+advanced_settings:
+  ajax_loading: true
+  analytics_code: ""
+  custom_styles: ""
+  header_js: ""
+  footer_js: ""

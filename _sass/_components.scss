@@ -1,0 +1,130 @@
+
+@media only screen and (min-width: $vp-xlarge) {
+  .header,
+  .page,
+  .footer {
+    // max-width: $vp-xlarge;
+  }
+
+  p{
+    max-width: $vp-medium;
+  }
+}
+
+// Header
+// ------------------------------------------------------------------------- //
+.header {
+  padding: $l;
+}
+
+
+// Section
+// ------------------------------------------------------------------------- //
+.section {
+  padding: $l;
+}
+
+
+// Contact
+// ------------------------------------------------------------------------- //
+
+.contact {
+
+}
+
+
+
+
+// Page (Main Content)
+// ------------------------------------------------------------------------- //
+
+
+
+// Footer
+// ------------------------------------------------------------------------- //
+
+.footer {
+  background-color: $dark;
+  color: $light;
+  padding: $l;
+  padding-bottom: $xl;
+}
+
+// Image Block
+// ------------------------------------------------------------------------- //
+
+
+
+// Content Block
+// ------------------------------------------------------------------------- //
+
+
+
+// Canvas
+// ------------------------------------------------------------------------- //
+
+
+#canvas{
+  width: 100vw;
+  height: 600px;
+}
+
+
+// Gallery
+// ------------------------------------------------------------------------- //
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: $m;
+  column-gap: $m;
+  padding-top: $s;
+  margin-bottom: $l;
+
+  &__item{
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      padding-bottom: 100%;
+      display: block;
+    }
+    &.is16by9::before {
+      padding-bottom: 56.25%;
+    }
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+// Herotext
+// ------------------------------------------------------------------------- //
+.herotext {
+  font-size: $l;
+  line-height: $lh-default;
+}
+
+
+// Tabelle
+// ------------------------------------------------------------------------- //
+table {
+  th, td{
+    text-align: left;
+    font-size: $m;
+    padding: $xs;
+    padding-right: $l;
+    border-top: solid 1px $seperator-color;
+  }
+
+  td{
+    font-weight: $fw-medium;
+  }
+}
