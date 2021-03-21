@@ -40,10 +40,10 @@
   <div>
     <ul class="gallery" id="links">
     {% assign image_files = site.static_files | where: "image", true %}
-    {% for myimage in image_files %}
+    {% for image in image_files %}
       <li class="gallery__item">
-        <a href="{{ myimage.path | replace: "small", "large" }}" title="{{ myimage.name }}">
-          <img src="{{ myimage.path }}" alt="{{ myimage.name }}" />
+        <a href="{{ site.baseurl }}{{ image.path | replace: "small", "large" }}" title="{{ image.name }}">
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" />
         </a>
       </li>
     {% endfor %}
