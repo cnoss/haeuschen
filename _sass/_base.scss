@@ -52,20 +52,28 @@ h1, h2, h3, h4, p, blockquote{
 }
 
 h1{
-  font-size: $xl;
+  font-size: $l;
+  font-weight: $fw-bold;
+  @media only screen and (min-width: $vp-medium) {
+    font-size: $xl;
+    font-weight: $fw-normal;
+  }
 }
 
 h2{
-  font-size: $l;
-
-  &.has-space{
-    margin-top: $xl;
+  font-size: $m;
+  font-weight: $fw-bold;
+  @media only screen and (min-width: $vp-medium) {
+    font-size: $l;
+    font-weight: $fw-normal;
   }
 }
 
 h3{
   font-size: $m;
 }
+
+
 
 p{
   margin-bottom: $xs;
@@ -123,12 +131,18 @@ dl{
 }
 
 .title{
-  font-weight: $fw-light;
+  font-weight: $fw-bold;
+  @media only screen and (min-width: $vp-medium) {
+    font-weight: $fw-normal;
+  }
 }
 
 .subtitle{
-  font-weight: $fw-normal;
+  font-weight: $fw-medium;
   margin-top: $s * -1;
+  @media only screen and (min-width: $vp-medium) {
+    font-weight: $fw-normal;
+  }
 }
 
 strong{

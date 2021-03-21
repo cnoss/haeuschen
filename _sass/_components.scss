@@ -14,14 +14,21 @@
 // Header
 // ------------------------------------------------------------------------- //
 .header {
-  padding: $l;
+  padding: $s;
+  @media only screen and (min-width: $vp-medium) {
+    padding: $l;
+  }
 }
 
 
 // Section
 // ------------------------------------------------------------------------- //
 .section {
-  padding: $l;
+  padding: $s;
+
+  @media only screen and (min-width: $vp-medium) {
+    padding: $l;
+  }
 }
 
 
@@ -46,8 +53,13 @@
 .footer {
   background-color: $dark;
   color: $light;
-  padding: $l;
+  padding: $s;
   padding-bottom: $xl;
+
+  @media only screen and (min-width: $vp-medium) {
+    padding: $l;
+  }
+
 }
 
 // Image Block
@@ -108,8 +120,14 @@
 // Herotext
 // ------------------------------------------------------------------------- //
 .herotext {
-  font-size: $l;
+  font-size: $m;
+  font-weight: $fw-medium;
   line-height: $lh-default;
+
+  @media only screen and (min-width: $vp-medium) {
+    font-size: $l;
+    font-weight: $fw-normal;
+  }
 }
 
 
