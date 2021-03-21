@@ -11,6 +11,13 @@
   }
 }
 
+
+// Page
+// ------------------------------------------------------------------------- //
+.page{
+  padding-bottom: $xl;
+}
+
 // Header
 // ------------------------------------------------------------------------- //
 .header {
@@ -42,9 +49,17 @@
 
 
 
-// Page (Main Content)
+// Toc
 // ------------------------------------------------------------------------- //
+.toc{
 
+  &__item{
+    padding-top: $xs;
+    padding-bottom: $xs;
+    border-top: solid 1px $seperator-color;
+    max-width: $vp-medium;
+  }
+}
 
 
 // Footer
@@ -52,7 +67,7 @@
 
 .footer {
   background-color: $dark;
-  color: $light;
+  color: $lighter;
   padding: $s;
   padding-bottom: $xl;
 

@@ -61,8 +61,8 @@ h1{
 }
 
 h2{
-  font-size: $m;
-  font-weight: $fw-bold;
+  font-size: $l;
+  font-weight: $fw-medium;
   @media only screen and (min-width: $vp-medium) {
     font-size: $l;
     font-weight: $fw-normal;
@@ -151,8 +151,9 @@ strong{
 
 a{
   text-decoration: none;
-  transition: background-color 0.3s;
-  &::before{
+  transition: all 0.3s;
+  font-weight: $fw-medium;
+  &.extern::before{
     @extend .icon;
     content: "open_in_new";
     color: $interaction-color;
@@ -160,5 +161,6 @@ a{
 
   &:hover{
     background-color: $decoration-color;
+    color: $lighter;
   }
 }

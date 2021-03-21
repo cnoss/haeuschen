@@ -45,26 +45,27 @@ $op-medium:0.6;
   --tileColor: #8C775E;
 }
 
-$steingrau: hsla(42, 6%, 55%, 0.7);
+$steingrau: hsla(42, 6%, 55%, 0.6);
 $lichtgrau: hsla(100, 3%, 77%, 1);
 $hellgrau: #BBBAB7;
 $blaugrau: #82899A;
 $beige: #B18C69;
-$light: #fff;
+$light: #E6DED1;
+$lighter: #fff;
 $dark: #57544F;
 $darker: #000;
 
 
 /* Functional Colors
 ---------------------------------------------------------------------------- */
-$interaction-color: $light;
+$interaction-color: $dark;
 $decoration-color: $beige;
 $text-color: $darker;
 $headline-color: $dark;
 $headline-color-light: $steingrau;
 $aside-color: $lichtgrau;
 $border-color: $lichtgrau;
-$seperator-color: $dark;
+$seperator-color: $light;
 $background-color: $steingrau;
 
 
