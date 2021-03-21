@@ -149,15 +149,44 @@
 // Tabelle
 // ------------------------------------------------------------------------- //
 table {
+  table-layout:fixed;
+  margin-bottom: $xl;
+  width: 100%;
+
   th, td{
     text-align: left;
     font-size: $m;
-    padding: $xs;
+    padding: $xxs;
     padding-right: $l;
     border-top: solid 1px $seperator-color;
+    line-height: $lh-default;
   }
 
   td{
     font-weight: $fw-medium;
+    width: 240px;
+    text-align: right;
   }
+
+  th{
+    width: 80%;
+    font-weight: $fw-light;
+  }
+
+  tfoot{
+    tr{
+      th, td{
+        font-weight: $fw-bold;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $vp-small) {
+    width: 80%;
+  }
+
+  @media only screen and (min-width: $vp-large) {
+    width: 50%;
+  }
+
 }
