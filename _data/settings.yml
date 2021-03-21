@@ -1,10 +1,9 @@
 basic_settings:
   site_title: Haus zur Miete
-  site_tagline: Osteopathie in Gummersbach
-  site_subtitle: Heilpraktikerin mit den Schwerpunkten Osteopathie & Manuelle Therapie
+  site_tagline: Einfamilienhaus in Bergneustadt zu vermieten
   favicon_image: /images/favicon.ico
-  description: Heilpraktikerin mit den Schwerpunkten Osteopathie, Manuelle Therapie und Physiotherapie; Behandlung von S&amp;auml;uglingen und Erwachsenen
-  featured_image: /images/hero/nina-schoppmann-osteopathie-1x1.jpg
+  description: Sehr schönes Einfamilienhaus in Bergneustadt zu vermieten.
+
 
 advanced_settings:
   ajax_loading: true
