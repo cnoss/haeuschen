@@ -1,19 +1,15 @@
 <section class="section">
 
   <h2 id="maengel">Bekannte Mängel und Schäden</h2>
-  {% assign prefix = "mangel-" %}
-  <ul class="gallery" id="{{prefix}}links">
-    {% assign image_files = site.static_files | where : "image",
-    true %}
-    {% for image in image_files %}
-      {% if image.name contains prefix %}
-        <li class="gallery__item">
-          <a href="{{ site.baseurl }}{{ image.path | replace: "small", "large" }}" title="{{ image.name }}">
-            <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}"/>
-          </a>
-        </li>
-      {% endif %}
-    {% endfor %}
+  <ul class="gallery">
+    <li class="gallery__item-small">
+      <figure class="img-with-text">
+        <img src="./images/small/mangel-treppe.jpg">
+        <figcaption>
+          Stück aus einer Stufe der Kellertreppe ist heraus gebrochen.
+        </figcaption>
+      </figure>
+    </li>
   </ul>
 
 </section>
