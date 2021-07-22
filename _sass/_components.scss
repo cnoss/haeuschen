@@ -58,6 +58,11 @@
     padding-bottom: $xs;
     border-top: solid 1px $seperator-color;
     max-width: $vp-medium;
+
+    &.with-seperator{
+      margin-top: $s;
+      border: none;
+    }
   }
 }
 
@@ -136,6 +141,41 @@
 }
 
 
+// Video Gallery
+// ------------------------------------------------------------------------- //
+
+.video-gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: $m;
+  column-gap: $m;
+  padding-top: $s;
+  margin-bottom: $l;
+
+  &__item{
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      padding-bottom: 100%;
+      display: block;
+    }
+    &::before {
+      padding-bottom: 56.25%;
+    }
+    iframe{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
 // Herotext
 // ------------------------------------------------------------------------- //
 .herotext {
@@ -182,6 +222,15 @@ table {
       th, td{
         font-weight: $fw-bold;
       }
+    }
+  }
+
+  &.text{
+    th{
+      width: 50%;
+    }
+    td{
+      text-align: left;
     }
   }
 
